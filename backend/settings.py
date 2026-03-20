@@ -99,7 +99,7 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:5173",
+    # "http://localhost:5173",
     "https://ems-project-indol.vercel.app",
 ]
 REST_FRAMEWORK = {
@@ -122,3 +122,4 @@ SIMPLE_JWT = {
     'BLACKLIST_AFTER_ROTATION': True,
 }
 CORS_ALLOW_ALL_ORIGINS = True
+

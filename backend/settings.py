@@ -10,7 +10,9 @@ SECRET_KEY = 'django-insecure-a_p=w6$za(uwi50rsdo5c%lx(el=7r*&km0+n!g5=51#^ml#q#
 
 DEBUG = True
 
-ALLOWED_HOSTS = []
+# Change this:
+ALLOWED_HOSTS = ['lakshu.pythonanywhere.com']
+
 
 
 # Application definition
@@ -98,6 +100,7 @@ USE_TZ = True
 STATIC_URL = 'static/'
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
+    "https://ems-project-indol.vercel.app",
 ]
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
@@ -118,3 +121,4 @@ SIMPLE_JWT = {
     'ROTATE_REFRESH_TOKENS': True,
     'BLACKLIST_AFTER_ROTATION': True,
 }
+CORS_ALLOW_ALL_ORIGINS = True

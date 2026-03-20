@@ -1,10 +1,10 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "http://127.0.0.1:8000/api/",
+  // This uses your LIVE backend on PythonAnywhere
+  baseURL: import.meta.env.VITE_API_URL || "https://pythonanywhere.com",
 });
 
-// This "interceptor" attaches your token to EVERY request automatically
 API.interceptors.request.use((config) => {
   const token = localStorage.getItem("access_token");
   if (token) {

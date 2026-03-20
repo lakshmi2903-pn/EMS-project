@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Login from "./pages/Login";
-import Dashboard from "./pages/Dashboard"; // This will hold your Sidebar and Form
+import Dashboard from "./pages/Dashboard"; 
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);

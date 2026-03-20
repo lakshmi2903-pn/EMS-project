@@ -1,21 +1,15 @@
-
-
+import os
 from pathlib import Path
-
 BASE_DIR = Path(__file__).resolve().parent.parent
-
-
-
 SECRET_KEY = 'django-insecure-a_p=w6$za(uwi50rsdo5c%lx(el=7r*&km0+n!g5=51#^ml#q#'
-
 DEBUG = True
-
 # Change this:
 ALLOWED_HOSTS = [
-    '://pythonanywhere.com', # Keep this for the live site
-    '127.0.0.1',                # Add this for local testing
-    'localhost',                # Add this as well
+    'lakshu.pythonanywhere.com', 
+    '127.0.0.1',                
+    'localhost',                
 ]
+
 
 
 
@@ -102,6 +96,9 @@ USE_TZ = True
 
 
 STATIC_URL = 'static/'
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
 CORS_ALLOWED_ORIGINS = [
     # "http://localhost:5173",
     "https://ems-project-indol.vercel.app",

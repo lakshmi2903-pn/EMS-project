@@ -11,7 +11,11 @@ SECRET_KEY = 'django-insecure-a_p=w6$za(uwi50rsdo5c%lx(el=7r*&km0+n!g5=51#^ml#q#
 DEBUG = True
 
 # Change this:
-ALLOWED_HOSTS = ['lakshu.pythonanywhere.com']
+ALLOWED_HOSTS = [
+    '://pythonanywhere.com', # Keep this for the live site
+    '127.0.0.1',                # Add this for local testing
+    'localhost',                # Add this as well
+]
 
 
 
